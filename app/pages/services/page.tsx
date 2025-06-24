@@ -13,7 +13,7 @@ export default function ServicesPage() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-16 space-y-12 text-blue-900">
       <div className="text-center">
-        <h5 className="text-primary uppercase font-bold text-red-600 tracking-wider">
+        <h5 className="uppercase font-bold text-red-600 tracking-wider">
           Services That We Provide
         </h5>
         <h1 className="text-4xl font-bold mt-2">24-Hour Services</h1>

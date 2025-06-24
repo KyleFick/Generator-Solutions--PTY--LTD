@@ -22,7 +22,7 @@ export default function AboutPage() {
             <strong>Terence Carter</strong>, our founder and CEO, brings over a decade of hands-on experience in the energy sector. His leadership, vision, and technical expertise are the driving force behind our commitment to excellence.
           </p>
           <p>
-            John believes in doing things right the first time and leads with honesty, transparency, and an unwavering focus on customer satisfaction.
+            Terence believes in doing things right the first time and leads with honesty, transparency, and an unwavering focus on customer satisfaction.
           </p>
         </div>
 

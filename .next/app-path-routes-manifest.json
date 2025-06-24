@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/contact/route": "/api/contact",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/pages/aboutus/page": "/pages/aboutus",
+  "/pages/contactus/page": "/pages/contactus",
+  "/pages/features/page": "/pages/features",
+  "/pages/gallery/page": "/pages/gallery",
+  "/pages/quote/page": "/pages/quote",
+  "/pages/services/page": "/pages/services"
+}

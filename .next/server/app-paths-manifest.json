@@ -1,11 +1,5 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
   "/pages/aboutus/page": "app/pages/aboutus/page.js",
-  "/pages/contactus/page": "app/pages/contactus/page.js",
-  "/pages/features/page": "app/pages/features/page.js",
-  "/pages/gallery/page": "app/pages/gallery/page.js",
-  "/pages/quote/page": "app/pages/quote/page.js",
-  "/pages/services/page": "app/pages/services/page.js"
+  "/pages/gallery/page": "app/pages/gallery/page.js"
 }
