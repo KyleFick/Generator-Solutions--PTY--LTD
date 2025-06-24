@@ -13,8 +13,11 @@ export default function Navbar() {
     <nav className="bg-white shadow-md fixed w-full z-50 top-0 border-b border-blue-100">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-red-600">
-          PowerGen
+        <Link
+          href="/"
+          className="text-2xl font-bold text-red-600 whitespace-nowrap"
+        >
+          Generator Solutions (Pty) LTD
         </Link>
 
         {/* Desktop Navigation */}
@@ -28,9 +31,11 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button className="bg-blue-600 text-white hover:bg-blue-700">
-            {NavLinks[NavLinks.length - 1].name}
-          </Button>
+          <Link href={NavLinks[NavLinks.length - 1].href}>
+            <Button className="bg-blue-600 text-white hover:bg-blue-700">
+              {NavLinks[NavLinks.length - 1].name}
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -41,7 +46,11 @@ export default function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
           >
-            {isOpen ? <X className="text-blue-800" /> : <Menu className="text-blue-800" />}
+            {isOpen ? (
+              <X className="text-blue-800" />
+            ) : (
+              <Menu className="text-blue-800" />
+            )}
           </Button>
         </div>
       </div>

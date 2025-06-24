@@ -19,6 +19,14 @@ export const NavLinks: NavLink[] = [
     href: "/pages/contactus",
   },
   {
+    name: "About",
+    href: "/pages/aboutus",
+  },
+  {
+    name: "Gallery",
+    href: "/pages/gallery",
+  },
+  {
     name: "Get a Quote",
     href: "/pages/quote",
   },
