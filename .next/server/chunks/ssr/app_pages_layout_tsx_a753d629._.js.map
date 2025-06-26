@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/nano/Desktop/Business%20Projects/Generator-Solutions--PTY--LTD/app/pages/layout.tsx"],"sourcesContent":["// app/pages/layout.tsx\n\nimport { ReactNode } from \"react\";\n\n\nconst Layout = ({ children }: { children: ReactNode }) => {\n  return (\n    <div className=\"min-h-screen text-blue-900\">\n      <main className=\"px-4 pt-20\">{children}</main>\n    </div>\n  );\n};\n\nexport default Layout;\n"],"names":[],"mappings":"AAAA,uBAAuB;;;;;;AAKvB,MAAM,SAAS,CAAC,EAAE,QAAQ,EAA2B;IACnD,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAK,WAAU;sBAAc;;;;;;;;;;;AAGpC;uCAEe","debugId":null}}]
+}
