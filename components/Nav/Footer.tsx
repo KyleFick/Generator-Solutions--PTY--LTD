@@ -98,7 +98,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-red-500 hover:underline font-semibold"
           >
-            Code Velocity
+            Hack Bolt Studios
           </a>
           .
         </div>
