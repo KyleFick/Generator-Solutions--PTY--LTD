@@ -4,7 +4,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { NavLinks } from "@/app/data/navLinks"; // adjust path as needed
+import { NavLinks } from "@/app/data/navLinks";
+import Image from  "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +14,24 @@ export default function Navbar() {
     <nav className="bg-white shadow-md fixed w-full z-50 top-0 border-b border-blue-100">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         {/* Logo */}
+
+
+        {/* Logo visible only on mobile */}
+        <Link href="/" className="block md:hidden">
+          <Image
+              src="/GSLogo.jpeg"
+              alt="Generator Solutions Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+              priority
+          />
+        </Link>
+
+        {/* Company Name (text) hidden on mobile */}
         <Link
-          href="/"
-          className="text-2xl font-bold text-red-600 whitespace-nowrap"
+            href="/"
+            className="hidden md:inline text-xl font-bold text-red-600 whitespace-nowrap"
         >
           Generator Solutions (Pty) LTD
         </Link>

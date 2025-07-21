@@ -5,7 +5,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#061429] text-white pt-16">
+    <footer className="bg-[#061429] text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Contact Info */}
@@ -15,7 +15,7 @@ export default function Footer() {
             </h3>
             <div className="flex items-start gap-3 mb-3">
               <MapPin className="text-red-500" size={20} />
-              <p>44 North St, Noordgesig, Soweto, 1804, South Africa</p>
+              <p>647 Central Road, Noordgesig, Soweto, 1804, South Africa</p>
             </div>
             <div className="flex items-start gap-3 mb-3">
               <Mail className="text-red-500" size={20} />
@@ -37,7 +37,7 @@ export default function Footer() {
                 Home
               </Link>
               <Link
-                href="/pages/about"
+                href="/pages/aboutus"
                 className="hover:text-red-400 transition-colors"
               >
                 About Us
@@ -93,7 +93,7 @@ export default function Footer() {
           </span>
           . Created by{" "}
           <a
-            href="https://codevelocity.dev"
+            href="https://hackboltstudios.co.za"
             target="_blank"
             rel="noopener noreferrer"
             className="text-red-500 hover:underline font-semibold"
