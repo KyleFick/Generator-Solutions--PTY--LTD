@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { PhoneCall, Clock3, Reply } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { toast } from "sonner"
 
 export default function QuotePage() {
   const [form, setForm] = useState({
@@ -36,9 +37,11 @@ export default function QuotePage() {
     });
 
     if (res.ok) {
+      toast.success("Quote request sent! ✅");
       setStatus("Quote request sent!");
       setForm({ name: "", email: "", service: "", message: "" });
     } else {
+      toast.error("Failed to send. Please try again.");
       setStatus("Failed to send. Please try again.");
     }
   };

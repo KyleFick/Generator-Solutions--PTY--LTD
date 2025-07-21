@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Nav/NavBar";
 import Footer from "@/components/Nav/Footer";
 import { ModeToggle } from "@/components/Theme-Toggle";
+import { Toaster } from "@/components/ui/sonner"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Generator Solutions (pty) LTD",
-  description: "Create by Velocity Code",
+  description: "Create by Hack Bolt Studios",
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) 
@@ -30,12 +31,13 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
           <Navbar />
           {children}
+          <Toaster />
           {/* <div className="fixed bottom-6 right-6 z-50">
             <ModeToggle />
           </div> */}
